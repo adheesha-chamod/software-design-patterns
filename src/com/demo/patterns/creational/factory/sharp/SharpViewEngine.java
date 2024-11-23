@@ -7,6 +7,6 @@ import java.util.Map;
 public class SharpViewEngine implements ViewEngine {
     @Override
     public String render(String viewName, Map<String, Object> context) {
-        return "View rendered by Sharp";
+        return String.format("<h1>%s - View rendered by Sharp!</h1>", viewName);
     }
 }
